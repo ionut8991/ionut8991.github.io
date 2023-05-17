@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+
+/*-----------------------------------------------------------------------------STANDARD STUFF*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  background: lightgrey;
+}
+/*----------------------------WRAPPERS*/
+.exterior {
+  width: 100%;
+  min-height: 100%;
+}
+
+.wrapper {
+  margin-left: 30px;
+  margin-right: 30px;
+
+}
+
+.scroll-wrap {
+  overflow-x: hidden;
+  top: 50px; bottom: 0;
+
+}
+
+/*-------------------------------HEADER*/
+
+.header-main {
+  height: 80px;
+  background-color: #727992;
+  background-size: auto 100%;
+  display: inline-grid;
+  position:fixed;
+  top: 0px; right: 0px; left: 0;
+  z-index: 2;
+}
+
+.button p{
+  align-content: center;
+  justify-self: left;
+}
+
+.header-main p{
+  align-content: center;
+  justify-self: left;
+}
+
+
+/*------------------------------CONTENT*/
+.content {
+  padding-bottom: 30%;
+  line-height: 1.5rem;
+  padding-top: 2rem;
+  color: #424242;
+  margin-top:50px;
+}
+h1 {
+  margin: 2rem 0 1rem 0;
+  font-size: 3rem;
+}
+p {
+  margin-bottom: 2rem;
+}
+
+table{
+  justify-self: center;
+}
+
+th{
+  background-color: aquamarine;
+  padding: 0 10px;
+}
+#name{
+  min-width: 100px;
+}
+#mail{
+  min-width: 230px;
+}
+#mesaj{
+  min-width: 300px;
+  max-width: 600px;
+}
+#data
+{
+  min-width: 100px;
+}
+#action
+{
+  min-width: 100px;
+}
+
+td{
+  text-align: center;
+}
+
+table input{
+  color: red;
+  background: none;
+  border: none;
+  font-size: 16px;
+}
+
+a:hover{
+  cursor: grab;
+}
+/*-------------------------------FOOTER*/
+.main-footer {
+  background-color: #727992;
+  background-size: auto 100%;
+  position: fixed;
+  bottom: 0px; left: 0; right: 0;
+  height: 50px;
+  letter-spacing: 0.2rem;
+  font-size: 0.6rem;
+  opacity: 0.75;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 10px;
+}
