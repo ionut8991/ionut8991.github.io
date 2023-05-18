@@ -1,7 +1,7 @@
 <?php
 class Complex{
-    var $real=0;
-    var $imag = 0;
+    var $real;
+    var $imag;
     function Complex($a, $b){
         $this -> real = $a;
         $this -> imag = $b;
@@ -9,7 +9,7 @@ class Complex{
 
     function modul()
     {
-        return sqrt(($this ->real) * ($this -> real) + ($this -> imag) * ($this ->imag));
+        return sqrt(pow(($this -> real),2) + pow( ($this -> imag), 2));
     }
 }
 

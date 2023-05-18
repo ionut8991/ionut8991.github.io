@@ -15,9 +15,6 @@
     {
 		$insert = "INSERT INTO contact_form(name, email, message) VALUES('$name','$mail','$message')";
 		mysqli_query($conn_contact, $insert);
-		echo '<script>
-				alert("Email sent succesfuly!");
-			</script>';
 		mysqli_close($conn_contact);
     }
 }

@@ -42,7 +42,7 @@ if(!isset($_SESSION['user_name'])){
         </div>
     </nav><!-- End: Navbar With Button -->
     <div>
-        <h1>Typography</h1>
+        <h1 id="top">Typography</h1>
         <hr>
         <h1>Heading level 1</h1>
         <h2>Heading level 2</h2>
@@ -375,7 +375,7 @@ if(!isset($_SESSION['user_name'])){
                 <input type="button" value="Input disabled button" disabled="">
             </p>
             <p>
-                <a class="button" href="#" onclick="return false;">Anchor button</a>
+                <a class="button" href="#top" onclick="return false;">Anchor button</a>
                 <a class="button disabled" href="#" onclick="return false;">Anchor disabled button</a>
             </p>
 

@@ -117,7 +117,7 @@ if(!isset($_SESSION['user_name'])){
                 // Antet pentru a indica formatul emailului și codificarea caracterelor
                 $antet = "From: sondaj@elysiumhotel.com\r\n";
 
-                echo "Mesajul transmis este: ", $destinatar, "<br>", $subiect, "<br>", $mesaj, "<br>", $antet;
+                echo "<br><br>Mesajul transmis este: ", $destinatar, "<br>", $subiect, "<br>", $mesaj, "<br>", $antet;
                 // Trimiterea emailului
                 if (mail($destinatar, $subiect, $mesaj, $antet)) {
                     echo "<br><p> Mulțumim pentru participare! Răspunsurile au fost trimise cu succes. </p> <br>";
