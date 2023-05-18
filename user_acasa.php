@@ -43,6 +43,7 @@ if(!isset($_SESSION['user_name'])){
                     <li class="nav-item"><a class="nav-link" href="facilitati.php">Facilitati</a></li>
                     <li class="nav-item"><a class="nav-link" href="elemente.php">Elemente de Programare Web</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sondaj.php">Sondaj</a></li>
                 </ul><span class="navbar-text">Salut,<?php echo $_SESSION['user_name'];?>&nbsp;</span><button class="btn btn-primary" type="button" style="border-bottom-color: var(--bs-navbar-color);background: rgb(253,13,114);" onclick="location.href='Inregistrare/logout.php'">Logout</button>
             </div>
         </div>
@@ -52,7 +53,7 @@ if(!isset($_SESSION['user_name'])){
         <div class="container">
             <div class="text-center p-4 p-lg-5">
                 <p class="fw-bold text-primary" style="color: var(--bs-danger);">Locul in care relaxarea nu are sfarsit!</p>
-                <h1 class="fw-bold mb-4" style="color: var(--bs-highlight-bg);">Elysium Hotel</h1><button class="btn btn-primary fs-5 me-2 py-2 px-4" type="button" style="background: linear-gradient(var(--bs-teal) 0%, var(--bs-success) 62%);">Rezerva acum</button>
+                <h1 class="fw-bold mb-4" style="color: var(--bs-highlight-bg);">Elysium Hotel</h1><button class="btn btn-primary fs-5 me-2 py-2 px-4" type="button" style="background: linear-gradient(var(--bs-teal) 0%, var(--bs-success) 62%);" disabled>Rezerva acum</button>
             </div>
         </div>
     </section><!-- End: Banner Clean -->

@@ -8,6 +8,7 @@ if(!isset($_SESSION['user_name'])){
     header('location:index.php');
 }
 
+
 ?>
 
 <!DOCTYPE html>
@@ -26,7 +27,7 @@ if(!isset($_SESSION['user_name'])){
     <link rel="stylesheet" href="assets/css/Simple-Slider.css">
 </head>
 
-<body style="background: url(&quot;assets/img/bg.jpg&quot;) center no-repeat;">
+<body style="background: url(&quot;assets/img/bg.jpg&quot;) center / cover no-repeat;">
     <!-- Start: Navbar With Button -->
     <nav class="navbar navbar-light navbar-expand-md py-3" style="background: url(&quot;assets/img/bg.jpg&quot;) center, var(--bs-indigo);">
         <div class="container"><a class="navbar-brand d-flex align-items-center" href="#"><span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon" style="background: var(--bs-navbar-disabled-color);"><i class="icon-diamond"></i></span><span>Elysium Hotel</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
@@ -41,58 +42,92 @@ if(!isset($_SESSION['user_name'])){
             </div>
         </div>
     </nav><!-- End: Navbar With Button -->
-    <!-- Start: Gallery Offset Grid -->
-    <div class="container d-flex flex-column align-items-center py-4 py-xl-5">
-        <div class="row gy-4 row-cols-1 row-cols-md-2 w-100" style="max-width: 800px;">
-            <div class="col order-md-first">
-                <div class="card"><img class="card-img w-100 d-block" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png">
-                    <div class="card-img-overlay text-center d-flex flex-column justify-content-center align-items-center p-4" style="background: url(&quot;assets/img/the-gym-elysium-gallery.jpg&quot;) center / contain no-repeat;">
-                        <h4 style="color: var(--bs-card-bg);">Sala de fitness</h4>
-                        <p style="color: var(--bs-gray-300);">Experiența perfectă de antrenament într-o sală de fitness complet echipată, alături de personal profesionist și clase în grup motivate.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col d-md-flex order-first justify-content-md-start align-items-md-end order-md-1">
-                <div style="width: 80%;">
-                    <h2>Facilități de top</h2>
-                    <p>Bucurați-vă de facilități de top într-un hotel care vă îndeplinește toate nevoile.Toate aceste facilități sunt concepute pentru a vă oferi o experiență deosebită și relaxantă în timpul șederii dumneavoastră.</p>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card"><img class="card-img w-100 d-block" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png">
-                    <div class="card-img-overlay text-center d-flex flex-column justify-content-center align-items-center p-4" style="background: url(&quot;assets/img/046B-relaxation_room.jpg&quot;) center / contain no-repeat;">
-                        <h4 style="color: var(--bs-card-bg);">Spa</h4>
-                        <p style="color: var(--bs-gray-200);">Relaxează-te și răsfață-te într-un spa luxos și reconfortant. Lasă-ți grijile deoparte și bucură-te de tratamente și terapii care îți împrospătează mintea, corpul și spiritul.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col order-md-2">
-                <div class="card"><img class="card-img w-100 d-block" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png">
-                    <div class="card-img-overlay text-center d-flex flex-column justify-content-center align-items-center p-4" style="background: url(&quot;assets/img/Kids-Club-4.jpg&quot;) center / contain no-repeat;">
-                        <h4 style="color: var(--bs-card-bg);">Loc de joacă pentru copii</h4>
-                        <p style="color: var(--bs-gray-300);">Un loc de joacă special dedicat copiilor, unde se pot distra în siguranță și într-un mediu captivant. </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card"><img class="card-img w-100 d-block" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png">
-                    <div class="card-img-overlay text-center d-flex flex-column justify-content-center align-items-center p-4" style="background: url(&quot;assets/img/045_Spa_pool_IMG_aaa5317.jpg&quot;) center / contain no-repeat;">
-                        <h4 style="background: var(--bs-card-cap-bg);color: var(--bs-card-bg);">Piscină interioară</h4>
-                        <p style="color: var(--bs-gray-200);">Distracție și relaxare într-o piscină interioară confortabilă și încântătoare. Îmbăiază-te și răcorește-te în apă și bucură-te de momente de relaxare într-un mediu plăcut și intim.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col order-md-2">
-                <div class="card"><img class="card-img w-100 d-block" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png">
-                    <div class="card-img-overlay text-center d-flex flex-column justify-content-center align-items-center p-4" style="background: url(&quot;assets/img/Atrium---Ceremony-set-up.jpg&quot;) center / contain no-repeat;">
-                        <h4 style="color: var(--bs-card-bg);">Locatii pentru evenimente speciale</h4>
-                        <p style="color: var(--bs-gray-300);">Volutpat habitasse risus posuere, commodo fusce donec. Turpis donec tristique.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div><!-- End: Gallery Offset Grid -->
-    <!-- Start: Footer Clean -->
+    <div style="padding-left: 20px;">
+        <h1>Sondaj de opinie </h1>
+        <form action="" method="POST">
+            <h2>1. Când planificați o călătorie, cât de des vizitați site-ul hotelului înainte de a face o rezervare?</h2>
+            <input type="radio" name="frecventa-vizitare" value="Intotdeauna">Intotdeauna<br>
+            <input type="radio" name="frecventa-vizitare" value="De obicei">De obicei<br>
+            <input type="radio" name="frecventa-vizitare" value="Uneori">Uneori<br>
+            <input type="radio" name="frecventa-vizitare" value="Rareori">Rareori<br>
+            <input type="radio" name="frecventa-vizitare" value="Niciodata">Niciodata<br>
+
+            <h2>2. Ce informații vă interesează cel mai mult pe site-ul hotelului?</h2>
+            <input type="checkbox" name="informatii-interes[]" value="Descrierea camerei și a facilităților">Descrierea camerei și a facilităților<br>
+            <input type="checkbox" name="informatii-interes[]" value="Galeria foto a camerelor și a hotelului">Galeria foto a camerelor și a hotelului<br>
+            <input type="checkbox" name="informatii-interes[]" value="Prețurile și disponibilitatea">Prețurile și disponibilitatea<br>
+            <input type="checkbox" name="informatii-interes[]" value="Serviciile și facilitățile oferite de hotel">Serviciile și facilitățile oferite de hotel<br>
+            <input type="checkbox" name="informatii-interes[]" value="Informații despre atracțiile turistice din zonă">Informații despre atracțiile turistice din zonă<br>
+            <input type="checkbox" name="informatii-interes[]" value="Opiniile și recenziile altor oaspeți">Opiniile și recenziile altor oaspeți<br>
+            <input type="checkbox" name="informatii-interes[]" value="Altele">Altele (vă rugăm să specificați): <input type="text" name="informatii-interes[]-altele"><br>
+
+            <h2>3. Găsiți site-ul nostru ușor de navigat?</h2>
+            <input type="radio" name="usor-de-navigat" value="Da">Da<br>
+            <input type="radio" name="usor-de-navigat" value="Nu">Nu<br>
+
+            <h2>4. Ce ați dori să îmbunătățim sau să adăugăm pe site-ul nostru?</h2>
+            <input type="checkbox" name="imbunatatiri[]" value="Informații mai detaliate despre facilități și servicii">Informații mai detaliate despre facilități și servicii<br>
+            <input type="checkbox" name="imbunatatiri[]" value="O secțiune de rezervări mai intuitivă">O secțiune de rezervări mai intuitivă<br>
+            <input type="checkbox" name="imbunatatiri[]" value="Galerii foto mai bogate">Galerii foto mai bogate<br>
+            <input type="checkbox" name="imbunatatiri[]" value="Recenzii și testimoniale mai vizibile">Recenzii și testimoniale mai vizibile<br>
+            <input type="checkbox" name="imbunatatiri[]" value="Un blog cu recomandări de călătorie">Un blog cu recomandări de călătorie<br>
+            <input type="checkbox" name="imbunatatiri[]" value="Altele">Altele (vă rugăm să specificați): <input type="text" name="imbunatatiri[]-altele"><br>
+
+            <h2>5. Sunteți mulțumit de aspectul vizual al site-ului nostru?</h2>
+            <input type="radio" name="aspect-vizual" value="Da">Da<br>
+            <input type="radio" name="aspect-vizual" value="Nu">Nu<br>
+
+            <h2>6. Ați recomanda site-ul nostru altor persoane care călătoresc în zonă?</h2>
+            <input type="radio" name="recomandare" value="Da">Da<br>
+            <input type="radio" name="recomandare" value="Nu">Nu<br>
+
+
+            <button class="btn btn-primary fs-5 me-2 py-2 px-4" type="submit" style="background: linear-gradient(var(--bs-teal) 0%, var(--bs-success) 62%);" >Trimite</button>
+
+
+            <?php
+            if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                // Informațiile de la formular
+                $frecventaVizitare = $_POST["frecventa-vizitare"];
+                $informatiiInteres = implode(", ", $_POST["informatii-interes"]);
+                $usorDeNavigat = $_POST["usor-de-navigat"];
+                $imbunatatiri = implode(", ", $_POST["imbunatatiri"]);
+                $aspectVizual = $_POST["aspect-vizual"];
+                $recomandare = $_POST["recomandare"];
+
+                // Adresa de email destinatar
+                $destinatar = "elysium@elysiumhotel.com";
+
+                // Subiectul și conținutul emailului
+                $subiect = "Sondaj de opinie - Răspunsuri";
+                $mesaj = "Răspunsuri la sondaj de opinie:\n\n";
+                $mesaj .= "1. Când planificați o călătorie, cât de des vizitați site-ul hotelului înainte de a face o rezervare? \n <br>";
+                $mesaj .= "- $frecventaVizitare \n\n <br><br>";
+                $mesaj .= "2. Ce informații vă interesează cel mai mult pe site-ul hotelului? \n<br>";
+                $mesaj .= "- $informatiiInteres \n\n<br><br>";
+                $mesaj .= "3. Găsiți site-ul nostru ușor de navigat? \n<br>";
+                $mesaj .= "- $usorDeNavigat \n\n<br><br>";
+                $mesaj .= "4. Ce ați dori să îmbunătățim sau să adăugăm pe site-ul nostru? \n<br>";
+                $mesaj .= "- $imbunatatiri \n\n<br><br>";
+                $mesaj .= "5. Sunteți mulțumit de aspectul vizual al site-ului nostru? \n<br>";
+                $mesaj .= "- $aspectVizual \n\n<br><br>";
+                $mesaj .= "6. Ați recomanda site-ul nostru altor persoane care călătoresc în zonă? \n<br>";
+                $mesaj .= "- $recomandare \n\n<br><br>";
+
+                // Antet pentru a indica formatul emailului și codificarea caracterelor
+                $antet = "From: sondaj@elysiumhotel.com\r\n";
+
+                echo "Mesajul transmis este: ", $destinatar, "<br>", $subiect, "<br>", $mesaj, "<br>", $antet;
+                // Trimiterea emailului
+                if (mail($destinatar, $subiect, $mesaj, $antet)) {
+                    echo "<br><p> Mulțumim pentru participare! Răspunsurile au fost trimise cu succes. </p> <br>";
+                } else {
+                    echo "<br><p> Ne pare rău, dar nu am putut trimite răspunsurile. Vă rugăm să încercați mai târziu.</p><br>";
+                }
+            }
+            ?>
+        </form>
+    </div><!-- Start: Footer Clean -->
     <footer class="text-center py-4">
         <div class="container">
             <div class="row row-cols-1 row-cols-lg-3">

@@ -57,6 +57,7 @@ if (isset($_POST["submit"])) {
                     <li class="nav-item"><a class="nav-link" href="facilitati.php">Facilitati</a></li>
                     <li class="nav-item"><a class="nav-link" href="elemente.php">Elemente de Programare Web</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sondaj.php">Sondaj</a></li>
                 </ul><span class="navbar-text">Salut,<?php /*echo $_SESSION['user_name'];*/?>&nbsp;</span><button class="btn btn-primary" type="button" style="border-bottom-color: var(--bs-navbar-color);background: rgb(253,13,114);" onclick="location.href='Inregistrare/logout.php'">Logout</button>
             </div>
         </div>

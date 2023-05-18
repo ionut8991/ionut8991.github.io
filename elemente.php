@@ -36,6 +36,7 @@ if(!isset($_SESSION['user_name'])){
                     <li class="nav-item"><a class="nav-link" href="facilitati.php">Facilitati</a></li>
                     <li class="nav-item"><a class="nav-link" href="elemente.php">Elemente de Programare Web</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sondaj.php">Sondaj</a></li>
                 </ul><span class="navbar-text">Salut,<?php echo $_SESSION['user_name'];?>&nbsp;</span><button class="btn btn-primary" type="button" style="border-bottom-color: var(--bs-navbar-color);background: rgb(253,13,114);" onclick="location.href='Inregistrare/logout.php'">Logout</button>
             </div>
         </div>
@@ -377,6 +378,8 @@ if(!isset($_SESSION['user_name'])){
                 <a class="button" href="#" onclick="return false;">Anchor button</a>
                 <a class="button disabled" href="#" onclick="return false;">Anchor disabled button</a>
             </p>
+
+            <a href="obiecte.php">Buton pentru utilizare obiecte si clase PHP</a>
         </form>
     </div><!-- Start: Footer Clean -->
     <footer class="text-center py-4">
