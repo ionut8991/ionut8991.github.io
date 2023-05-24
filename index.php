@@ -1,4 +1,4 @@
-<?php
+<!--
 	@include('assets-main/php/contact.php');
 
 	if(isset($_POST["submit"]))
@@ -18,7 +18,8 @@
 		mysqli_close($conn_contact);
     }
 }
-?>
+
+-->
 
 <!DOCTYPE HTML>
 <html>
