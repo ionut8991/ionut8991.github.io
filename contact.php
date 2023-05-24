@@ -1,4 +1,5 @@
-<?php
+<!--
+
 
 @include 'config.php';
 
@@ -30,7 +31,7 @@ if (isset($_POST["submit"])) {
 }
 
 ?>
-
+-->
 <!DOCTYPE html>
 <html lang="en">
 
